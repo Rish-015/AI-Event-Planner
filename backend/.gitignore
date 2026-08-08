@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+venv/
+win_venv/
+test_results.txt
+test_invitation_gemini.jpg
+test_invitation.jpg
