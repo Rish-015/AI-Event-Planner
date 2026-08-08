@@ -77,7 +77,7 @@ function MainContent() {
           model: formData.aiModel
         };
 
-        const response = await fetch('http://localhost:8000/events/generate', {
+        const response = await fetch('https://ai-event-planner-3xnj.onrender.com/events/generate', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
@@ -157,7 +157,7 @@ function MainContent() {
       // Live FastAPI chat call
       try {
         const eventId = eventData?.id || 1;
-        const response = await fetch(`http://localhost:8000/events/${eventId}/chat`, {
+        const response = await fetch(`https://ai-event-planner-3xnj.onrender.com/events/${eventId}/chat`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ message: messageText })
